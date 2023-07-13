@@ -15,7 +15,7 @@ public class LinkedListAllOp {
 			this.data = data;
 			this.next = null;
 		}
-
+		//InsertData
 		@SuppressWarnings("unused")
 		public boolean insertData(int data) {
 			Node newNode = new Node(data);
@@ -37,7 +37,7 @@ public class LinkedListAllOp {
 
 		}
 
-		// insert at pos
+		// insert data at pos
 		public boolean insertAtPosition(int data, int pos) {
 			Node newNode = new Node(data);
 			if (newNode == null)
@@ -65,7 +65,7 @@ public class LinkedListAllOp {
 			temp.next = newNode;
 			return true;
 		}
-
+		//display
 		public void display() {
 			Node show = head;
 			while (show != null) {
@@ -76,6 +76,7 @@ public class LinkedListAllOp {
 
 		}
 
+			//reverse list
 		public void reverseList() {
 			Node temp = null;
 			Node curr = head;
@@ -93,7 +94,7 @@ public class LinkedListAllOp {
 			}
 
 		}
-
+		//delete at pos
 		public void deleteAtPos(int pos) {
 			Node temp = head;
 			if (head == null) {
@@ -120,7 +121,7 @@ public class LinkedListAllOp {
 			}
 
 		}
-
+		//delete at last
 		public void deleteLast() {
 			Node temp = head;
 			while (temp.next.next != null) {
@@ -139,7 +140,7 @@ public class LinkedListAllOp {
 			}
 			temp.next = temp.next.next;
 		}
-
+		//counting node
 		public int countNode() {
 			int count = 0;
 			if (head == null)
@@ -153,7 +154,7 @@ public class LinkedListAllOp {
 			}
 			return count;
 		}
-
+		//finding dublicate node
 		public boolean duplicate() {
 
 			Node before = head;
@@ -170,7 +171,7 @@ public class LinkedListAllOp {
 			}
 			return false;
 		}
-
+		//delete Duplicate Node
 		public void deleteDuplicate() {
 			Node before = head;
 		
